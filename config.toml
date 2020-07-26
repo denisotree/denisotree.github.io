@@ -1,0 +1,66 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Все статьи"
+theme = "anatole"
+enableEmoji = true
+enableRobotsTXT = true
+
+googleAnalytics = ""
+
+[params]
+title = "Денис Вдовин"
+author = "Денис Вдовин"
+desctiption = "Блог, заметки, статьи и обзоры"
+profilePicture = "images/profile.jpg"
+keywords = ""
+favicon = "favicons/"
+customCss = []
+customJs = []
+mainSections = ['travels', 'technologies', 'lifehacks']
+images = ["images/site-feature-image.png"]
+
+[[params.socialIcons]]
+icon = "fa-linkedin"
+title = "Linkedin"
+url = "https://www.linkedin.cn/in/denis-vdovin-5b39b1186/"
+
+[[params.socialIcons]]
+icon = "fa-github"
+title = "GitHub"
+url = "https://github.com/denisotree"
+
+[[params.socialIcons]]
+icon = "fa-instagram"
+title = "instagram"
+url = "https://www.instagram.com/dvdovin_/"
+
+[[params.socialIcons]]
+icon = "fa-envelope"
+title = "e-mail"
+url = "mailto:denisotree@gmail.com"
+
+[menu]
+
+  [[menu.main]]
+  name = "Все статьи"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "Путешествия"
+  weight = 200
+  identifier = "travels"
+  url = "/travels/"
+
+#  [[menu.main]]
+#  name = "Технологии"
+#  weight = 300
+#  identifier = "technologies"
+#  url = "/technologies/"
+
+#  [[menu.main]]
+#  name = "Лайфхаки"
+#  weight = 400
+#  identifier = "lifehacks"
+#  url = "/lifehacks/"
