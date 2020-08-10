@@ -338,6 +338,9 @@ a:hover, a:active {
 .post .post-content p {
   font-size: 1rem;
 }
+.post .post-content li {
+  line-height: 2;
+}
 .post .post-content a:hover {
   color: #2F69B3;
 }
