@@ -1,6 +1,7 @@
 <head>
     <title> {{.Site.Params.author}}{{ with .Title }} | {{ . }}{{ end }} </title>
     {{- partial "analytics/google-tag-head.html" -}}
+    {{- partial "analytics/yandex-metrika-head.html" -}}
     <meta charset="utf-8">
     {{- hugo.Generator -}}
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
