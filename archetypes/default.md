@@ -6,6 +6,7 @@ Tags: []
 Categories: []
 featured_image: ""
 featured_image_caption: ""
+summary: ""
 DisableComments: false
 draft: true
 ---

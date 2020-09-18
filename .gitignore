@@ -23,3 +23,5 @@ dist
 hugolib/hugo_stats.json
 
 vendor
+
+content/private/
