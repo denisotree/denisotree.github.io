@@ -11,7 +11,7 @@
     <ul class="social-links">
         {{ range $item := .Site.Params.socialIcons }}
         <li>
-        <a href="{{ $item.url }}" rel="me" aria-label="{{ $item.title }}">
+        <a href="{{ $item.url }}" rel="me" aria-label="{{ $item.title }}" target="_blank" rel="noopener noreferrer">
           <i class="fa fa-2x {{ $item.icon }}" aria-hidden="true"></i>
         </a>          
         </li>
