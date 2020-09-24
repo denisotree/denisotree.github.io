@@ -8,15 +8,15 @@ enableRobotsTXT = true
 googleAnalytics = ""
 
 [params]
-title = "Денис Вдовин"
-author = "Денис Вдовин"
-desctiption = "Блог, заметки, статьи и обзоры"
+title = "Denis Vdovin"
+author = "Denis Vdovin"
+desctiption = "Denis Vdovin personal blog"
 profilePicture = "images/profile.jpg"
 keywords = ""
 favicon = "favicons/"
 customCss = []
 customJs = []
-mainSections = ['travels', 'technologies', 'lifehacks']
+mainSections = ['travels', 'it']
 images = ["images/site-feature-image.png"]
 
 [[params.socialIcons]]
@@ -42,25 +42,19 @@ url = "mailto:denisotree@gmail.com"
 [menu]
 
   [[menu.main]]
-  name = "Все статьи"
+  name = "All articles"
   identifier = "home"
   weight = 100
   url = "/"
 
   [[menu.main]]
-  name = "Путешествия"
+  name = "Travels"
   weight = 200
   identifier = "travels"
   url = "/travels/"
 
-#  [[menu.main]]
-#  name = "Технологии"
-#  weight = 300
-#  identifier = "technologies"
-#  url = "/technologies/"
-
-#  [[menu.main]]
-#  name = "Лайфхаки"
-#  weight = 400
-#  identifier = "lifehacks"
-#  url = "/lifehacks/"
+  [[menu.main]]
+  name = "Technologies"
+  weight = 300
+  identifier = "it"
+  url = "/it/"

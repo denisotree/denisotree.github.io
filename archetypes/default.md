@@ -7,6 +7,6 @@ Categories: []
 featured_image: ""
 featured_image_caption: ""
 summary: ""
-DisableComments: false
+DisableComments: true
 draft: true
 ---
