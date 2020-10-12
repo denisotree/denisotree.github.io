@@ -1,7 +1,7 @@
 baseURL = "https://dblog.me/"
 languageCode = "en-us"
 title = "Все статьи"
-theme = "anatole"
+theme = "stada"
 enableEmoji = true
 enableRobotsTXT = true
 
