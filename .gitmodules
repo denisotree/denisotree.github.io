@@ -1,0 +1,3 @@
+[submodule "stada"]
+	path = themes/stada
+	url = git@github.com:denisotree/hugo-theme-stada.git

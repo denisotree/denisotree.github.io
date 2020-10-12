@@ -1,14 +1,16 @@
 baseURL = "https://dblog.me/"
 languageCode = "en-us"
 title = "Все статьи"
-theme = "anatole"
+theme = "stada"
 enableEmoji = true
 enableRobotsTXT = true
+
+tags = ["jupyter"]
 
 googleAnalytics = ""
 
 [params]
-title = "Denis Vdovin"
+title = "Denis Vdovin personal blog"
 author = "Denis Vdovin"
 description = "Denis Vdovin personal blog"
 profilePicture = "images/profile.jpg"
@@ -33,11 +35,6 @@ url = "https://github.com/denisotree"
 icon = "fa-instagram"
 title = "instagram"
 url = "https://www.instagram.com/dvdovin_/"
-
-[[params.socialIcons]]
-icon = "fa-envelope"
-title = "e-mail"
-url = "mailto:denisotree@gmail.com"
 
 [menu]
 

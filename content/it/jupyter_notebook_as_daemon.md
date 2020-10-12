@@ -2,7 +2,7 @@
 title: "Setting up jupyter notebook as daemon"
 date: 2020-09-24T16:33:08+03:00
 Description: ""
-Tags: []
+Tags: ["jupyter"]
 Categories: []
 featured_image: "/images/it/jupyter.jpg"
 featured_image_caption: ""
