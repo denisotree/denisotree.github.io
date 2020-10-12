@@ -1,7 +1,7 @@
 baseURL = "https://dblog.me/"
 languageCode = "en-us"
 title = "Все статьи"
-theme = "stada"
+theme = "anatole"
 enableEmoji = true
 enableRobotsTXT = true
 
@@ -10,7 +10,7 @@ googleAnalytics = ""
 [params]
 title = "Denis Vdovin"
 author = "Denis Vdovin"
-desctiption = "Denis Vdovin personal blog"
+description = "Denis Vdovin personal blog"
 profilePicture = "images/profile.jpg"
 keywords = ""
 favicon = "favicons/"
