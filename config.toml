@@ -7,8 +7,6 @@ enableRobotsTXT = true
 
 tags = ["jupyter"]
 
-googleAnalytics = ""
-
 [params]
 title = "Denis Vdovin personal blog"
 author = "Denis Vdovin"
@@ -20,6 +18,7 @@ customCss = []
 customJs = []
 mainSections = ['travels', 'it']
 images = ["images/site-feature-image.png"]
+yandexCounterId = 66338773
 
 [[params.socialIcons]]
 icon = "fa-linkedin"
