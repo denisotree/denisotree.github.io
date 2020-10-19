@@ -1,6 +1,6 @@
 baseURL = "https://dblog.me/"
 languageCode = "en-us"
-title = "Все статьи"
+title = "All articles"
 theme = "stada"
 enableEmoji = true
 enableRobotsTXT = true
@@ -9,15 +9,16 @@ tags = ["jupyter"]
 
 [params]
 title = "Denis Vdovin personal blog"
-author = "Denis Vdovin"
 description = "Denis Vdovin personal blog"
+author = "Denis Vdovin"
+bio = ""
 profilePicture = "images/profile.jpg"
-keywords = ""
+# keywords = ""
 favicon = "favicons/"
-customCss = []
-customJs = []
+# customCss = []
+# customJs = []
 mainSections = ['travels', 'it']
-images = ["images/site-feature-image.png"]
+# images = ["images/site-feature-image.png"]
 yandexCounterId = 66338773
 
 [[params.socialIcons]]
@@ -35,22 +36,20 @@ icon = "fa-instagram"
 title = "instagram"
 url = "https://www.instagram.com/dvdovin_/"
 
-[menu]
+[[menu.main]]
+name = "All articles"
+identifier = "home"
+weight = 100
+url = "/"
 
-  [[menu.main]]
-  name = "All articles"
-  identifier = "home"
-  weight = 100
-  url = "/"
+[[menu.main]]
+name = "Travels"
+weight = 200
+identifier = "travels"
+url = "/travels/"
 
-  [[menu.main]]
-  name = "Travels"
-  weight = 200
-  identifier = "travels"
-  url = "/travels/"
-
-  [[menu.main]]
-  name = "Technologies"
-  weight = 300
-  identifier = "it"
-  url = "/it/"
+[[menu.main]]
+name = "Technologies"
+weight = 300
+identifier = "it"
+url = "/it/"
