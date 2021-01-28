@@ -13,12 +13,8 @@ description = "Denis Vdovin personal blog"
 author = "Denis Vdovin"
 bio = ""
 profilePicture = "images/profile.jpg"
-# keywords = ""
 favicon = "favicons/"
-# customCss = []
-# customJs = []
 mainSections = ['travels', 'it']
-# images = ["images/site-feature-image.png"]
 yandexCounterId = 66338773
 
 [[params.socialIcons]]
