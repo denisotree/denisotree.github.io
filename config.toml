@@ -5,13 +5,13 @@ theme = "stada"
 enableEmoji = true
 enableRobotsTXT = true
 
-tags = ["jupyter", "linux", "ubuntu", "mac os", "linux tips"]
+tags = ["jupyter", "linux", "ubuntu", "mac os", "ssh", "linux tips"]
 
 [params]
-title = "Denis Vdovin personal blog"
-description = "Denis Vdovin personal blog"
+title = "Dblog"
+description = "Blog about lifehacks, it, travel, etc"
 author = "Denis Vdovin"
-bio = ""
+bio = "Programmer, data analyst, living in Cyprus"
 profilePicture = "images/profile.jpg"
 favicon = "favicons/"
 mainSections = ['travels', 'it']
