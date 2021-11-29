@@ -5,7 +5,7 @@ theme = "stada"
 enableEmoji = true
 enableRobotsTXT = true
 
-tags = ["jupyter"]
+tags = ["jupyter", "linux", "ubuntu", "mac os", "linux tips"]
 
 [params]
 title = "Denis Vdovin personal blog"

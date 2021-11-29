@@ -8,7 +8,7 @@ featured_image: "/images/it/passwords.jpg"
 featured_image_caption: ""
 summary: "How to create random password no linux or Mac OS"
 DisableComments: true
-draft: true
+draft: false
 ---
 
 Open your terminal
