@@ -1,6 +1,7 @@
 .DS_Store
 /hugo
 docs/public*
+public
 /.idea
 hugo.exe
 *.test
