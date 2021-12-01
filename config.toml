@@ -5,7 +5,7 @@ theme = "stada"
 enableEmoji = true
 enableRobotsTXT = true
 
-tags = ["jupyter", "linux", "ubuntu", "mac os", "ssh", "linux tips"]
+tags = ["jupyter", "linux", "ubuntu", "mac os", "ssh", "linux tips", "python"]
 
 [params]
 title = "Dblog"

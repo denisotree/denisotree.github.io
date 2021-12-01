@@ -1,12 +1,12 @@
 ---
 title: "Random Passwort on Linux"
 date: 2021-11-29T22:55:56+02:00
-Description: "How to create random password no linux or Mac OS"
+Description: "How to create random password on linux or Mac OS"
 Tags: ["linux", "ubuntu", "mac os", "linux tips"]
 Categories: []
 featured_image: "/images/it/passwords.jpg"
 featured_image_caption: ""
-summary: "How to create random password no linux or Mac OS"
+summary: "How to create random password on linux or Mac OS"
 DisableComments: true
 draft: false
 ---
