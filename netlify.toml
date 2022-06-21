@@ -30,15 +30,38 @@ HUGO_VERSION = "0.99.1"
 HUGO_ENABLEGITINFO = "true"
 
 [[headers]]
-  for = "/img/*"
+  for = "*.js"
   [headers.values]
-    Cache-Control = "public, s-max-age=604800"
+    cache-control = '''
+    public,
+	max-age=86400
+	'''
 [[headers]]
-  for = "/*.css"
+  for = "*.css"
   [headers.values]
-    Cache-Control = "public, s-max-age=3600"
+    cache-control = '''
+    public,
+	max-age=86400
+	'''
 [[headers]]
-  for = "/*.js"
+  for = "/images/*"
   [headers.values]
-    Cache-Control = "public, s-max-age=3600"
+    cache-control = '''
+    public,
+	max-age=86400
+	'''
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    cache-control = '''
+    public,
+	max-age=86400
+	'''
+[[headers]]
+  for = "/favicons/*"
+  [headers.values]
+    cache-control = '''
+    public,
+	max-age=86400
+	'''
 
