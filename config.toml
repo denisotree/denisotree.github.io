@@ -1,4 +1,4 @@
-baseURL = "https://dblog.me/"
+baseURL = "https://denisotree.github.io"
 languageCode = "en-us"
 title = "All articles"
 theme = "stada"
