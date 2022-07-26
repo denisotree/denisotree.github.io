@@ -8,7 +8,7 @@ enableRobotsTXT = true
 tags = ["jupyter", "linux", "ubuntu", "mac os", "ssh", "linux tips", "python"]
 
 [params]
-title = "Dblog"
+title = "Personal blog"
 description = "Blog about lifehacks, it, travel, etc"
 author = "Denis Vdovin"
 bio = "Programmer, data analyst, living in Cyprus"
