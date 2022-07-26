@@ -1,0 +1,36 @@
+<!doctype html><html lang=en data-theme=light><head><title>Denis Vdovin | Setting up jupyter notebook as daemon</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name=description content="Blog about lifehacks, it, travel, etc"><link rel=stylesheet href=/css/styles.e263538e79b17519da9819f1926e65b0119498ebe4c84b5eef989d67c06ba07d.css><link rel="shortcut icon" href=https://denisotree.github.io/favicons/favicon.ico type=image/x-icon><link rel=apple-touch-icon sizes=180x180 href=https://denisotree.github.io/favicons/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://denisotree.github.io/favicons/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://denisotree.github.io/favicons/favicon-16x16.png><link rel=canonical href=https://denisotree.github.io/it/jupyter_notebook_as_daemon/></head><body><header><div class=header_container><div class=header_logo><a href=https://denisotree.github.io><span>Dblog</span></a></div><div class=header_menu><ul><li><a href=/ title>All articles</a></li><li><a href=/travels/ title>Travels</a></li><li><a href=/it/ title>Technologies</a></li></ul></div><div class=header_social><span><a href=https://www.linkedin.cn/in/denis-vdovin-5b39b1186/ target=_blank rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></span>
+<span><a href=https://github.com/denisotree target=_blank rel="noopener noreferrer"><i class="fab fa-github"></i></a></span>
+<span><a href=https://www.instagram.com/dvdovin_/ target=_blank rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></span><div class=header_mode><span class=mode_button><i class="fas fa-adjust"></i></span></div></div></div><div class=header_mob_menu_button id=mobMenuButton><i class="fas fa-bars"></i></div><div class=header_mob_menu id=mobMenu><div class=header_mob_menu_container><div class=header_mob_menu_close id=mobMenuCloseButton><i class="fas fa-times"></i></div><div class=header_mob_menu_list><ul><li><a href=/ title>All articles</a></li><li><a href=/travels/ title>Travels</a></li><li><a href=/it/ title>Technologies</a></li></ul></div></div></div></header><main><div class=main_section><div class=main_section_container><article><div class=article_content><div class=article_title><h1>Setting up jupyter notebook as daemon</h1></div><div class=article_info><span><i class="fas fa-clock"></i>2020-09-24 16:33:08</span>
+<span><i class="fas fa-bookmark"></i>2 minutes read</span></div><h2 id=jupiter-notebook-installation>Jupiter Notebook Installation</h2><p>Install Jupyterlab, using pip package manager</p><pre tabindex=0><code>pip install jupyterlab
+</code></pre><p>Next, install notebook</p><pre tabindex=0><code>pip install notebook
+</code></pre><p>Now, you can start Jupyter notebook with command <strong>jupyter notebook</strong></p><h2 id=create-virtualenv-kernel>Create virtualenv kernel</h2><p>In order not to get side effects when installing packages for your laptop, we will do it inside the virtual environment.</p><p>Install module <strong>virtualenv</strong> if you have not it</p><pre tabindex=0><code>pip install virtualenv
+</code></pre><p>Create your environment</p><pre tabindex=0><code>virtualenv [-p {path_to_python_bin}] .venv
+</code></pre><p>For activate virtual environment us the next command</p><pre tabindex=0><code>. .venv/bin/activate
+</code></pre><p>Install new jupyter kernel</p><pre tabindex=0><code>python -m ipykernel install --user --name=.venv
+</code></pre><h2 id=configurate-daemon-startup>Configurate daemon startup</h2><p>Generate Jupyter notebook config file</p><pre tabindex=0><code>jupyter notebook --generate-config
+
+&gt;&gt; jupyter config: path/to/jupyter_notebook_config.py
+</code></pre><p>Use your favorite text editor for change this config like here</p><pre tabindex=0><code>c.NotebookApp.ip = &#39;0.0.0.0&#39;
+c.NotebookApp.open_browser = False
+c.NotebookApp.port = 8888
+</code></pre><p>Set password for your notebook</p><pre tabindex=0><code>jupyter notebook password
+</code></pre><p>Next, we will create system daemon file</p><pre tabindex=0><code>vim ~/.config/systemd/user/jupyter.service
+</code></pre><p>And insert next rows</p><pre tabindex=0><code>[Unit]
+Description=Jupyter Notebook
+
+[Service]
+Type=simple
+PIDFile=/run/jupyter.pid
+ExecStart=/home/{username}/.local/bin/jupyter-notebook --config=/home/{username}/.jupyter/jupyter_notebook_config.py
+User={username}
+Group={groupname}
+WorkingDirectory=/abspath/to/your/working/directory
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+</code></pre><p>Enable and start daemon</p><pre tabindex=0><code>systemctl --user enable jupyter.service
+</code></pre><pre tabindex=0><code>systemctl --user daemon-reload
+</code></pre><pre tabindex=0><code>systemctl --user restart jupyter.service
+</code></pre><h2 id=check-notebook>Check notebook</h2><p>In your browser go to address <strong>{your_server_name}:4242</strong></p><p><img src=/images/it/jupyter-password.jpg alt="Password window"></p><p>Enter your password and will see this window</p><p><img src=/images/it/jupyter-welcome.jpg alt="Welcome window"></p><p>Press &ldquo;New&rdquo; button and choose <strong>.venv</strong> like your base kernel. Now you can use all modules, you install in <strong>.venv</strong> environment.</p><p>Enjoy!</p></div></article></div></div><div class=right_section><div class=author_block><div class=author_title>About me</div><div class=author_photo style=background-image:url(https://denisotree.github.io/images/profile.jpg)></div><div class=author_name>Denis Vdovin</div><div class=author_bio>Programmer, data analyst, living in Cyprus</div></div></div></main><footer><div class=footer_container><div class=footer_copyright>© Denis Vdovin 2022</div></div></footer><script defer src=/js/main.min.f471fb46fb816093bd4540372e2644c427bde4f3c731c8c5900097462c6ef598.js></script></body></html>
