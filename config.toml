@@ -33,7 +33,7 @@ title = "instagram"
 url = "https://www.instagram.com/denisotree/"
 
 [[menu.main]]
-name = "All articles"
+name = "Home"
 identifier = "home"
 weight = 100
 url = "/"
